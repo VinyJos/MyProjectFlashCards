@@ -1,0 +1,1 @@
+window.Card = new CardController();
