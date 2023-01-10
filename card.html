@@ -8,16 +8,20 @@
     <title>FlashCard</title>
 </head>
 <body>
+    <header>
+        <h1 class="title">English Flash Cards</h1>
+
+    </header>
     <div class="maincontainer">
         <div class="thecard">
             <div class="thefront">Front card
-                <h1 class="textFront"></h1>
+                <h1 class="textFront" id="Front"></h1>
             </div>
             <div class="theback">Back card
                 <h1 class="textBack">Como você está ?</h1>
             </div>
         </div>
-        <button type="submit" class="thebutton">Next</button>
+        <button type="submit" class="thebutton" id="btn" onclick="buttonProximo()">Next</button>
     </div>
 
     <script src="Scripts/controller/CardController.js"></script>
