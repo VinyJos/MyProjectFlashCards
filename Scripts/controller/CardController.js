@@ -4,7 +4,7 @@ class CardController {
     //atributos
     this._myTextFront;
     this._myTextBack;
-    this.API_URL = "https://localhost:7007/api/Usuarios";
+    this.API_URL = "https://localhost:7189/api/Phrases";
     this.currentUserIndex = 0;
     this.users = []
     this.displayCurrentUser();
@@ -25,8 +25,10 @@ class CardController {
         if (this.currentUserIndex <= this.users.length) {
             
             const currentUser = await this.getCurrentUser();
-            const userName = document.querySelector(".textFront");
-            userName.innerHTML = currentUser.nome;
+            const english = document.querySelector(".textFront");
+            const portuguese = document.querySelector(".textBack");
+            english.innerHTML = currentUser.textEnglish;
+            portuguese.innerHTML = currentUser.textPortuguese;
         }else {
             console.log("acabou ")
             this.currentUserIndex = 0
