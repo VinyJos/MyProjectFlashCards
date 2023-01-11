@@ -47,35 +47,6 @@ class CardController {
         });   
     }
 
-
-    // oberterUm(){
-    //     const myTextFront = document.querySelector(".textFront");
-    //     const getUrl = new URLSearchParams(window.location.search);
-    //     id = getUrl.get('id')
-    //     let url = 'https://localhost:7007/api/Usuarios'
-
-    //     console.log(`${url}${id}`)
-    //     fetch(`${url}/${id}`)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         myTextFront.innerHTML = data.nome
-    //     })
-    //     .catch(err => console.log(err))
-    // }
-      
-
-    // método para iniciar junto
-    // initialize(){
-    //     let myTextFront = document.querySelector(".textFront");
-    //     let myTextBack = document.querySelector(".textBack")
-
-      
-        
-    //     myTextFront.innerHTML = this.get();
-    //     myTextBack.innerHTML = "Olá"
-        
-    // }
-
     get myTextFront(){
         
         return this._myTextFront;
