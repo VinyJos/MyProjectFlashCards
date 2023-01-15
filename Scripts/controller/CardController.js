@@ -21,7 +21,7 @@ class CardController {
     
     // Mostra o usuário atual na tela
     async displayCurrentUser() {
-        console.log(this.getCurrentUser())
+
         if (this.currentUserIndex <= this.users.length) {
             
             const currentUser = await this.getCurrentUser();
@@ -34,7 +34,19 @@ class CardController {
             this.currentUserIndex = 0
             await this.displayCurrentUser();
         }
-        }
+    }
+
+    async postData(data) {
+        const response = await fetch(this.API_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        return await response.json();
+    }
+    
 
     async buttonProximo(){
         // Quando clicar no botão, pega o próximo usuário e mostra na tela

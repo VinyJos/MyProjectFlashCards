@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+hr{
+   margin-bottom: 0;
+   color: black;
+}
+.sectionForm{
+    background-color: black;
+}
+
+.label{
+    margin-top: 13%;
+}
+.divForm{
+    background-color: rgb(215, 233, 138);
+    height: 400px;
+
+}
+
+.form-group{
+    width: 50%;
+    margin: 0 auto;
+
+ 
+}
+
+.btn{
+    margin-top: 20px;
+    float: right;
+    width: 10rem;
+}
+
+.titleh2{
+    margin-left: 25%;
+    margin-top: 5rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    
+  
+}
